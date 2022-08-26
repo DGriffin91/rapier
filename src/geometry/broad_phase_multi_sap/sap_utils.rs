@@ -10,7 +10,9 @@ pub(crate) const REGION_WIDTH_BASE: Real = 1.0;
 pub(crate) const REGION_WIDTH_POWER_BASIS: Real = 5.0;
 
 pub(crate) fn sort2(a: u32, b: u32) -> (u32, u32) {
-    println!("error sort2 expected {} != {}", a, b);
+    if a == b {
+        println!("error sort2 expected {} != {}", a, b);
+    }
 
     if a < b {
         (a, b)
